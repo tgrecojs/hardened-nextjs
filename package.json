@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@lit-labs/react": "^1.0.4",
+    "@agoric/wallet-connection": "^0.1.5",
+    "@endo/eventual-send": "^0.14.8",
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
