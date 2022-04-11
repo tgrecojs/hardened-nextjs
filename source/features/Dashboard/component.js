@@ -1,3 +1,4 @@
+import MyWalletConnection from "../../shared/withAgoricWalletConnection.js";
 import LendingPoolCard from "../LendingPoolCard/component.js";
 
 const defaultLendingPools = [
@@ -11,6 +12,7 @@ const Dashboard = ({
   array = defaultLendingPools,
 }) => (
   <div>
+    <MyWalletConnection />
     <h4>{headingText}</h4>
     {array && array.map((x, i) => <LendingPoolCard key={`key-${i}`} {...x} />)}
   </div>
