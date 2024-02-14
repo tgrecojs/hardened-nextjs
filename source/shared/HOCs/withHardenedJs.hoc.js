@@ -4,9 +4,10 @@ const withHardenedJs = (Component) => (props) => {
   return (
     <div>
       <Script
+        async
         type="module"
-        src="https://cdn.esm.sh/v69/@endo/init@0.5.37/es2021/init.js"
-        strategy="afterInteractive"
+        src="https://esm.sh/@endo/init@1.0.2"
+        strategy="beforeInteractive"
       />
       <Component />
     </div>
